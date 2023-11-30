@@ -9,8 +9,7 @@ body {
 
 .mangas-container {
   display: grid;
-  grid-template-columns: 2fr;
-  gap: 20px;
+  grid-template-columns: repeat(1, 2fr);
   padding: 20px;
   justify-content: center;
   align-items: center; /* Centraliza verticalmente */
@@ -19,7 +18,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .mangas-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 2fr);
   }
 }
 
@@ -31,8 +30,8 @@ body {
   margin-top: 7px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  width: 100%;
-  max-width: 300px; /* Define a largura máxima dos itens */
+  width: 90%;
+  max-width: 200px;
 }
 
 .manga-item:hover {

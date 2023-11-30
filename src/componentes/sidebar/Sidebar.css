@@ -1,0 +1,41 @@
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0;
+}
+/* ... (estilos anteriores) ... */
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* ... (estilos posteriores) ... */
+
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items li {
+  padding: 15px;
+  color: #fff;
+  border-bottom: 1px solid #555;
+}
+
+.menu-items li:hover {
+  background-color: #555;
+}

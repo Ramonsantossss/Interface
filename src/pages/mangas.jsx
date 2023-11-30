@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './mangas.css';
 
+
 function Mangas() {
   const [mangasPopular, setMangasPopular] = useState([]);
 

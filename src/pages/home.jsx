@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './Home.css';
+import Mangas from './mangas';
 
 function Home() {
   const [activeTab, setActiveTab] = useState('chats'); // Estado para controlar a aba ativa
+  
 
   const changeTab = (tab) => {
     setActiveTab(tab);
@@ -12,7 +14,7 @@ function Home() {
     <div className="home">
       <div className="tabs">
         <div className={`tab ${activeTab === 'chats' ? 'active' : ''}`} onClick={() => changeTab('chats')}>
-          Novidades
+          Mangas
         </div>
         <div className={`tab ${activeTab === 'status' ? 'active' : ''}`} onClick={() => changeTab('status')}>
           Utilidades
@@ -24,35 +26,7 @@ function Home() {
       <div className="containe">
         {/* Aqui você colocaria o conteúdo de cada aba */}
         {activeTab === 'chats' && (
-          <>
-            <div className='box'>
-              <iframe
-                src="https://www.youtube.com/embed/qugKR-CrllI"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div className='box'>
-              <iframe
-                src="https://www.youtube.com/embed/qugKR-CrllI"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div className='box'>
-              <iframe
-                src="https://www.youtube.com/embed/qugKR-CrllI"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </>
+        <Mangas />
         )}
         {activeTab === 'status' && (
           <>

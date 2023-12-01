@@ -9,7 +9,7 @@ function Caps(props){
 
   return (
     <>
-    <h1>EM PRODUÇÃO...</h1>
+    <h1>{nome}</h1>
     </>
   )
 

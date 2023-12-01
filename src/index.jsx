@@ -7,6 +7,7 @@ import Caps from './pages/caps';
 import Home from './pages/home.jsx';
 import './App.css';
 
+
 function App() {
   return (
     <div className='geral'>

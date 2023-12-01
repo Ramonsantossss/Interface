@@ -1,3 +1,4 @@
+
 /* mangas.cgss */
 
 body {
@@ -9,7 +10,7 @@ body {
 
 .mangas-container {
   display: grid;
-  grid-template-columns: repeat(1, 2fr);
+  
   padding: 20px;
   justify-content: center;
   align-items: center; /* Centraliza verticalmente */

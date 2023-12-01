@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-//import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';  // Importe Link diretamente
 import './mangas.css';
+
 
 function Mangas() {
   const [mangasPopular, setMangasPopular] = useState([]);
@@ -26,14 +27,14 @@ function Mangas() {
     <div className='mangas-container'>
       {mangasPopular.map((manga, index) => (
         <div key={index} className='manga-item'>
-            <a onClick={() => window.location.href = manga.link} target='_blank' rel='noopener noreferrer'>
+            <Link to={`${manga.link}`}>
             <div className='manga-image'>
               <img className='capa' src={manga.imageUrl} alt={manga.title} />
               <div className='titulo-over'> 
                 <p className='titulo'>{manga.title}</p>
               </div>
             </div>
-          </a>
+          </Link>
           <div className='manga-info'>
             <p className='manga-type'>{manga.mangaType}</p>
             <p className='manga-rating'>Classificação: {manga.rating}</p>

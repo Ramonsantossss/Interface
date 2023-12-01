@@ -6,10 +6,11 @@ import Sidebar from '../sidebar/sidebar';
 function Header() {
   return (
     <header className="header-main">
+      <a href="/">
         <span className="logo-text">
-          
           <span className='white'>Ani</span>Kit
         </span>
+        </a>
       <Sidebar/>
         <div className="search-div">
            <div className="search-form">

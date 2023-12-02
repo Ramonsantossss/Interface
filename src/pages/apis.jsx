@@ -21,23 +21,25 @@ function Api() {
     }
   }, []);
 
+
+  const [userDetails, setUserDetails] = useState(null); // Estado para armazenar os detalhes do usuário
   const handleLogin = async (user, pass) => {
     try {
-      // Substitua 'sua_url_de_login' pela sua URL de login na API Express
-      const response = await fetch(`sua_url_de_login?username=${user}&password=${pass}`);
+      const response = await fetch(`https://happy-red-hummingbird.cyclic.app/entrarr?nome=${user}&senha=${pass}`);
 
       if (response.ok) {
         const data = await response.json();
 
-        if (data.status === 'success') {
-          // Login bem-sucedido
+        if (data === null || Object.keys(data).length === 0) {
+          // Usuário não encontrado ou dados vazios
+          setLoginError('Usuário ou senha incorretos.');
+        } else {
+          // Usuário encontrado, dados retornados pela API
           localStorage.setItem('username', user);
           localStorage.setItem('password', pass);
           setLoggedIn(true);
           setLoginError('');
-        } else if (data.status === 'defeat') {
-          // Usuário não encontrado ou credenciais incorretas
-          setLoginError('Usuário ou senha incorretos.');
+          setUserDetails(data); // Armazena os detalhes do usuário no estado
         }
       } else {
         setLoginError('Ocorreu um erro ao fazer login. Tente novamente.');
@@ -58,12 +60,23 @@ function Api() {
   };
 
   if (loggedIn) {
-    return (
-      <>
-        <h1>Bem-vindo, {username}!</h1>
-        <button onClick={handleLogout}>Logout</button>
-      </>
-    );
+  return (
+    <div className='main'>
+      <h1>Bem-vindo(a), {userDetails.username}!</h1>
+      <div className='card'>
+        <center>
+        <img className='foto-perfil' src={userDetails.ft}/>
+        </center><br></br>
+        <p className='span'>Nome: {userDetails.username}</p><br></br>
+        <p className='span'>Saldo: {userDetails.saldo}</p><br></br>
+        <p className='span'>Nivel: {userDetails.total}</p><br></br>
+        <p className='span'>Chave/Key: {userDetails.key}</p><br></br>
+        <p className='span'>Id: {userDetails._id}</p><br></br>
+      </div>
+      
+      <button onClick={handleLogout}>Logout</button>
+    </div>
+  );
   }
 
   return (

@@ -69,31 +69,7 @@ function Home() {
         {activeTab === 'calls' && (
           <>
             <div className='box'>
-              <iframe
-                src="https://www.youtube.com/embed/dQAKRGdoSQA?si=DYn93hFGeJc9ZGLR"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div className='box'>
-              <iframe
-                src="https://www.youtube.com/embed/dQAKRGdoSQA?si=DYn93hFGeJc9ZGLR"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div className='box'>
-              <iframe
-                src="https://www.youtube.com/embed/dQAKRGdoSQA?si=DYn93hFGeJc9ZGLR"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+              <h1>EM BREVE!!!</h1>
             </div>
           </>
         )}

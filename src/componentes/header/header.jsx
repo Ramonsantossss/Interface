@@ -5,6 +5,8 @@ import Sidebar from '../sidebar/sidebar';
 
 function Header() {
   return (
+    <div className='ha'>
+      
     <header className="header-main">
       <a href="/">
         <span className="logo-text">
@@ -19,6 +21,7 @@ function Header() {
         </div>
       
      </header>
+      </div>
   )
 }
 

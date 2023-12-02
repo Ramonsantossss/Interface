@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 import Mangas from './mangas';
+import Api from './apis';
 
 function Home() {
   const [activeTab, setActiveTab] = useState('chats'); // Estado para controlar a aba ativa
@@ -19,6 +20,9 @@ function Home() {
         <div className={`tab ${activeTab === 'status' ? 'active' : ''}`} onClick={() => changeTab('status')}>
           Utilidades
         </div>
+        <div className={`tab ${activeTab === 'apis' ? 'active' : ''}`} onClick={() => changeTab('apis')}>
+          APIs
+        </div>
         <div className={`tab ${activeTab === 'calls' ? 'active' : ''}`} onClick={() => changeTab('calls')}>
           Chat
         </div>
@@ -27,6 +31,9 @@ function Home() {
         {/* Aqui você colocaria o conteúdo de cada aba */}
         {activeTab === 'chats' && (
         <Mangas />
+        )}
+        {activeTab === 'apis' && (
+        <Api />
         )}
         {activeTab === 'status' && (
           <>

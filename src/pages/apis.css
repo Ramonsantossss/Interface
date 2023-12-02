@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Estilos para o corpo da página */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Estilos para o quadrado central */
+.square {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%; /* O quadrado ocupa 80% da largura disponível */
+  max-width: 300px; /* Define uma largura máxima */
+  height: 80vw; /* Altura igual a 80% da largura da viewport */
+  max-height: 400px; /* Define uma altura máxima */
+  justify-content: center;
+  align-items: center;
+}
+
+.square h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.square input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.square button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.square button:hover {
+  background-color: #0056b3;
+}
+
+.square p {
+  color: #ff0000;
+  margin-bottom: 15px;
+  font-size: 14px;
+}

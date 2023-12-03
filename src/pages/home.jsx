@@ -33,7 +33,9 @@ function Home() {
         <Mangas />
         )}
         {activeTab === 'apis' && (
+       
         <Api />
+       
         )}
         {activeTab === 'status' && (
           <>

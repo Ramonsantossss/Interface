@@ -1,0 +1,57 @@
+/* Estilos para o menu lateral */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Inicia o menu fechado */
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease; /* Adiciona uma transição suave para o efeito de abrir/fechar */
+}
+
+/* Estilos para o botão fora do menu */
+.outside-button {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  z-index: 999;
+  cursor: pointer;
+  padding: 17px;
+  background-color: #007bff; /* Cor de fundo do botão */
+  border: none;
+  color: white;
+  border-radius: 50%; /* Torna o botão redondo */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao botão */
+}
+
+/* Estilos para o texto dentro do botão */
+.outside-button span {
+  display: none; /* Esconde o texto no botão */
+}
+
+/* Estilos adicionais para o menu lateral... */
+
+.sidebar.open {
+  left: 0; /* Mostra o menu quando estiver aberto */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toggle-button {
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Estilos adicionais conforme necessário */

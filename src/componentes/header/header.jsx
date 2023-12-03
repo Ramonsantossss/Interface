@@ -16,7 +16,7 @@ function Header() {
       <Sidebar/>
         <div className="search-div">
            <div className="search-form">
-              <input className='pesquisa'  type="text" id="q" placeholder="Pesquisar Usuario" />
+             {/**  <input className='pesquisa'  type="text" id="q" placeholder="Pesquisar Usuario" /> */}
            </div>
         </div>
       

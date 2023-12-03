@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './apis.css';
+import Sidebar from './menu';
 
 function Api() {
   const [username, setUsername] = useState('');
@@ -61,21 +62,22 @@ function Api() {
 
   if (loggedIn) {
   return (
+    <aaa>
     <div className='main'>
-      <h1>Bem-vindo(a), {userDetails.username}!</h1>
       <div className='card'>
-        <center>
         <img className='foto-perfil' src={userDetails.ft}/>
-        </center><br></br>
+        <div className='texto'>
         <p className='span'>Nome: {userDetails.username}</p><br></br>
         <p className='span'>Saldo: {userDetails.saldo}</p><br></br>
         <p className='span'>Nivel: {userDetails.total}</p><br></br>
         <p className='span'>Chave/Key: {userDetails.key}</p><br></br>
         <p className='span'>Id: {userDetails._id}</p><br></br>
+        </div>
       </div>
-      
+      <Sidebar />
       <button onClick={handleLogout}>Logout</button>
     </div>
+  </aaa>
   );
   }
 

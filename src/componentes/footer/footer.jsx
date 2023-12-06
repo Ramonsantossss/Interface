@@ -21,7 +21,7 @@ function Footer() {
             <button className="round-button"><i className="fas fa-star"></i></button>
             <Link to="/fav" className="home-button round-button"><i className="fas fa-heart"></i></Link>
             <Link to="/" className="home-button round-button"><i className="fas fa-home"></i></Link>
-            <button className="round-button"><i className="fas fa-envelope"></i></button>
+            <Link to="/chat" className="home-button round-button"><i className="fas fa-envelope"></i></Link>
             <button className="round-button" onClick={toggleMenu}>
               {isOpen ? <li className='fas fa-times'></li> : <li className='fas fa-bars'></li>}
             </button>

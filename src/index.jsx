@@ -5,6 +5,7 @@ import Header from './componentes/header/header';
 import Footer from './componentes/footer/footer';
 import Caps from './pages/caps';
 import Home from './pages/home.jsx';
+import Chats from './pages/chat/index.jsx';
 import './App.css';
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/manga/:nome" component={Caps}/>
       </Switch>
       <Footer />
+         <Route exact path="/chat" component={Chats}/>
        </BrowserRouter>
     </React.Fragment>
     </div>

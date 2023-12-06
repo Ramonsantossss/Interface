@@ -85,7 +85,7 @@ function Api() {
     <center>
     <div className="square"> {/* Adicione a classe 'square' aqui */}
       <h1>Login</h1>
-      {loginError && <p>{loginError}</p>}
+      {loginError && <p className="ttt">{loginError}</p>}
       <input
         type="text"
         placeholder="Username"

@@ -9,7 +9,7 @@ function Mangas() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('https://happy-red-hummingbird.cyclic.app/all');
+        const response = await fetch('https://fine-gold-squid-yoke.cyclic.app/all');
         if (!response.ok) {
           throw new Error('Erro ao buscar os dados da API');
         }

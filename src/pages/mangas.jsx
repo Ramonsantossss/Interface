@@ -39,19 +39,22 @@ function Mangas() {
             <p className='manga-type'>{manga.mangaType}</p>
             <p className='manga-rating'>Classificação: {manga.rating}</p>
             <ul className='chapter-list'>
-              {manga.chapters.map((chapter, idx) => (
+              {/*
+                {manga.chapters.map((chapter, idx) => (
                 <li key={idx}>
                   
                   <a href={chapter.chapterLink} target='_blank' rel='noopener noreferrer'>
                     {chapter.chapterTitle}
                   </a>
-                  <span className='published'>Publicado: {chapter.publishedAgo}</span>
+                  <p className='published'>Publicado: {chapter.publishedAgo}</p>
                 </li>
               ))}
+              */}
             </ul>
           </div>
         </div>
       ))}
+      <br /><br /><br /><br />
     </div>
   );
 }

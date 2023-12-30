@@ -22,7 +22,7 @@ function Mangas() {
 
     fetchData();
   }, []);
-
+// clover
   return (
     <div className='mangas-container'>
       {mangasPopular.map((manga, index) => (

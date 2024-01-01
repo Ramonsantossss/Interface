@@ -26,7 +26,7 @@ function Api() {
   const [userDetails, setUserDetails] = useState(null); // Estado para armazenar os detalhes do usuário
   const handleLogin = async (user, pass) => {
     try {
-      const response = await fetch(`https://happy-red-hummingbird.cyclic.app/entrarr?nome=${user}&senha=${pass}`);
+      const response = await fetch(`https://fine-gold-squid-yoke.cyclic.app/entrarr?nome=${user}&senha=${pass}`);
 
       if (response.ok) {
         const data = await response.json();

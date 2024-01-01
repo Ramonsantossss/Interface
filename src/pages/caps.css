@@ -1,0 +1,46 @@
+/* Adapte os estilos conforme necessário */
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5em;
+  word-wrap: break-word; /* Adicionando a propriedade para quebrar palavras longas */
+  margin-top: 16px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.description {
+  font-size: 10px; /* Ajuste o tamanho conforme necessário */
+  margin-top: 10px;
+  text-align: left;
+  
+}
+
+.rela {
+  display: flex;
+  /*align-items: center;  Adicionando para centralizar verticahlmente */
+  
+}
+
+.info {
+  margin-left: 10px; /* Adicionando margem à direita para separar a imagem do texto */
+}
+
+.loading {
+  color: #777;
+}
+
+.error {
+  color: #ff0000;
+}

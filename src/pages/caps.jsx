@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./caps.css"
 
 function Caps(props) {
   const { match } = props;

@@ -23,7 +23,7 @@ function Footer() {
             <Link to="/" className="home-button round-button"><i className="fas fa-home"></i></Link>
             <Link to="/chat" className="home-button round-button"><i className="fas fa-envelope"></i></Link>
             <button className="round-button" onClick={toggleMenu}>
-              {isOpen ? <li className='fas fa-times'></li> : <li className='fas fa-bars'></li>}
+              {isOpen ? <li className='fas fa-times'></li>:<li className='fas fa-bars'></li>}
             </button>
           </div>
         </footer>

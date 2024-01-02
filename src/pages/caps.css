@@ -13,6 +13,24 @@
   margin-top: 16px;
 }
 
+.tabi {
+  text-align: left;
+}
+
+.bucap {
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: blueviolet;
+  width: 90%;
+  
+}
+
+.bucapb {
+  color: white;
+}
+
 .image {
   max-width: 100%;
   height: auto;

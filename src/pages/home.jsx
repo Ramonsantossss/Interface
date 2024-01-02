@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './Home.css';
 import Mangas from './mangas';
 import Api from './apis';
+import Centrohome from './Centrohome.jsx';
+import Filme from './filmes.jsx'
+import Populares from './popular.jsx'
 
 function Home() {
   const [activeTab, setActiveTab] = useState('chats'); // Estado para controlar a aba ativa
@@ -15,7 +18,7 @@ function Home() {
     <div className="home">
       <div className="tabs">
         <div className={`tab ${activeTab === 'chats' ? 'active' : ''}`} onClick={() => changeTab('chats')}>
-          Mangas
+          Animes
         </div>
         <div className={`tab ${activeTab === 'status' ? 'active' : ''}`} onClick={() => changeTab('status')}>
           Utilidades
@@ -30,7 +33,9 @@ function Home() {
       <div className="containe">
         {/* Aqui você colocaria o conteúdo de cada aba */}
         {activeTab === 'chats' && (
-        <Mangas />
+      <div className="boxi">
+        
+      </div>
         )}
         {activeTab === 'apis' && (
         <center>
@@ -76,6 +81,11 @@ function Home() {
           </>
         )}
       </div>
+      <Centrohome />
+      <Filme />
+      <Populares />
+
+      <br />
     </div>
   );
 }

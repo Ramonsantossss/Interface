@@ -68,12 +68,12 @@ function Api() {
       <div className='card'>
       <br />
         <img className='foto-perfil' src={userDetails.ft}/>
-        <div className='texto'>
-        <p className='span'>Nome: {userDetails.username}</p><br></br>
-        <p className='span'>Saldo: {userDetails.saldo}</p><br></br>
-        <p className='span'>Nivel: {userDetails.total}</p><br></br>
-        <p className='span'>Chave/Key: {userDetails.key}</p><br></br>
-        <p className='span'>Id: {userDetails._id}</p><br></br>
+        <div className='textoo'>
+        <p className='spoan'>Nome: {userDetails.username}</p><br></br>
+        <p className='sopan'>Saldo: {userDetails.saldo}</p><br></br>
+        <p className='sopan'>Nivel: {userDetails.total}</p><br></br>
+        <p className='sopan'>Chave/Key: {userDetails.key}</p><br></br>
+        <p className='sopan'>Id: {userDetails._id}</p><br></br>
         </div>
       </div>
       <Sidebar />

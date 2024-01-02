@@ -7,6 +7,7 @@ import Caps from './pages/caps';
 import Home from './pages/home.jsx';
 import Chats from './pages/chat/index.jsx';
 import Api from "./pages/apis.jsx"
+import Anime from "./pages/anime.jsx"
 import './App.css';
 
 
@@ -19,6 +20,7 @@ function App() {
         <Switch>
          <Route exact path="/" component={Home} />
           <Route exact path="/manga/:nome" component={Caps}/>
+          <Route exact path="/anime/:id" component={Anime}/>
       </Switch>
       <Footer />
          <Route exact path="/chat" component={Chats}/>

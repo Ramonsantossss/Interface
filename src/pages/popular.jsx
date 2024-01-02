@@ -67,7 +67,7 @@ function Populares() {
 
           <div className="conteudo" key={item}>
 
-            <Link to={`/manga/${item.category_id}`}>
+              <Link to={`/anime/${item.id}`}>
 
               <li className="li">
 

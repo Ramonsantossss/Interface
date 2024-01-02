@@ -67,7 +67,7 @@ function Filme() {
 
           <div className="conteudo" key={item}>
 
-            <Link to={`/manga/${item.category_id}`}>
+            <Link to={`/anime/${item.category_id}`}>
 
               <li className="li">
 

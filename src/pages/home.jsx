@@ -5,6 +5,7 @@ import Api from './apis';
 import Centrohome from './Centrohome.jsx';
 import Filme from './filmes.jsx'
 import Populares from './popular.jsx'
+import Favoritos from './favorito.jsx'
 
 function Home() {
   const [activeTab, setActiveTab] = useState('chats'); // Estado para controlar a aba ativa
@@ -81,10 +82,11 @@ function Home() {
           </>
         )}
       </div>
+      <Favoritos />
       <Centrohome />
       <Filme />
       <Populares />
-
+      
       <br />
     </div>
   );

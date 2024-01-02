@@ -1,90 +1,65 @@
-/* styles.css */
+/* Adicione estas classes ao seu arquivo de estilo (apis.css) */
 
-/* Estilos para o corpo da página */
-.body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #1c1c1c;
-}
-
+/* Estilo para a página de perfil */
 .main {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 }
 
 .card {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  padding: 5px;
-  display: flex;
-  display: flex;
-  margin: 10px;
-}
-
-.texto {
-  color: white;
-  font-size: 13px;
-  display: block;
-  margin-left: 4px;
-  margin-top: 8px;
-  text-align: left;
-}
-
-.span {
-  color: #fff;
-  width: 100%;
-  border-radius: 5px;
-  margin-top: -8px;
+  background-color: rgba(0,0,0,0 3);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+  padding: 0px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
 }
 
 .foto-perfil {
-  width: 95px;
-  border-radius: 40%;
-}
-/* Estilos para o quadrado central */
-.square {
-  background-color: #1c1c1c;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 80%; /* O quadrado ocupa 80% da largura disponível */
-  max-width: 100%; /* Define uma largura máxima */
-  height: 80vw; /* Altura igual a 80% da largura da viewport */
-  max-height: 300px; /* Define uma altura máxima */
-  justify-content: center;
-  align-items: center;
+  width: 150px; /* Ajuste conforme necessário */
+  height: 150px; /* Ajuste conforme necessário */
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.square h1 {
-  text-align: center;
-  margin-bottom: 20px;
+.texto {
+  margin-top: 10px;
 }
 
-.square input {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.span {
+  margin: 5px 0;
 }
 
-.square button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
+/* Estilo para o botão de logout */
+button {
+  background-color: #f44336;
   color: #fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-.square button:hover {
-  background-color: #00bf;
+/* Estilo para a barra lateral (menu) */
+/* Certifique-se de adicionar estilos adequados ao seu componente Sidebar */
+
+/* Estilo para a página de login */
+.square {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 8px black;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
-.square .ttt {
-  color: #ff0000;
-  margin-bottom: 15px;
-  font-size: 14px;
+.ttt {
+  color: #f44336;
+  margin-top: 10px;
 }

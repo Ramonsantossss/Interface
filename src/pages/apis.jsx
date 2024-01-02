@@ -63,8 +63,10 @@ function Api() {
   if (loggedIn) {
   return (
     <aaa>
+      <br />
     <div className='main'>
       <div className='card'>
+      <br />
         <img className='foto-perfil' src={userDetails.ft}/>
         <div className='texto'>
         <p className='span'>Nome: {userDetails.username}</p><br></br>
@@ -83,7 +85,7 @@ function Api() {
 
   return (
     <center>
-    <div className="square"> {/* Adicione a classe 'square' aqui */}
+    <div className="main"> {/* Adicione a classe 'square' aqui */}
       <h1>Login</h1>
       {loginError && <p className="ttt">{loginError}</p>}
       <input
@@ -97,10 +99,11 @@ function Api() {
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-      />
+      /> <br />
       <button onClick={() => handleLogin(username, password)}>Login</button>
       <Link to="/signup">Criar conta</Link>
     </div>
+      <br /><br /><br /><br />
       </center>
   );
 }

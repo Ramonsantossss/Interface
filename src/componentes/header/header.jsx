@@ -8,6 +8,7 @@ function Header() {
     <div className='ha'>
       
     <header className="header-main">
+      
       <a href="/">
         <span className="logo-text">
           <span className='white'>Ani</span>Kit
@@ -16,7 +17,7 @@ function Header() {
       <Sidebar/>
         <div className="search-div">
            <div className="search-form">
-             {/**  <input className='pesquisa'  type="text" id="q" placeholder="Pesquisar Usuario" /> */}
+             {/* <div className='pesquisa'><i className="fas fa-bars"></i></div> */}
            </div>
         </div>
       

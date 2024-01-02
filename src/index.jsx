@@ -6,6 +6,7 @@ import Footer from './componentes/footer/footer';
 import Caps from './pages/caps';
 import Home from './pages/home.jsx';
 import Chats from './pages/chat/index.jsx';
+import Api from "./pages/apis.jsx"
 import './App.css';
 
 
@@ -21,6 +22,7 @@ function App() {
       </Switch>
       <Footer />
          <Route exact path="/chat" component={Chats}/>
+         <Route exact path="/fav" component={Api} />
        </BrowserRouter>
     </React.Fragment>
     </div>

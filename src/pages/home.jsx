@@ -20,9 +20,9 @@ function Home() {
         <div className={`tab ${activeTab === 'status' ? 'active' : ''}`} onClick={() => changeTab('status')}>
           Utilidades
         </div>
-        <div className={`tab ${activeTab === 'apis' ? 'active' : ''}`} onClick={() => changeTab('apis')}>
+        {/*<div className={`tab ${activeTab === 'apis' ? 'active' : ''}`} onClick={() => changeTab('apis')}>
           APIs
-        </div>
+        </div>*/}
         <div className={`tab ${activeTab === 'calls' ? 'active' : ''}`} onClick={() => changeTab('calls')}>
           Chat
         </div>
@@ -33,9 +33,9 @@ function Home() {
         <Mangas />
         )}
         {activeTab === 'apis' && (
-       
+        <center>
         <Api />
-       
+        </center>
         )}
         {activeTab === 'status' && (
           <>

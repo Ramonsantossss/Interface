@@ -38,7 +38,7 @@ function Centrohome() {
                   <div className="texto">
                     <div className="name">
                       <span className="span">
-                        {item.category_name}
+                        {item.name}
                       </span>
                     </div><br />
                   </div>

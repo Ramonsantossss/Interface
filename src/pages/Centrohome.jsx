@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Centrohome.css";
 import { Link } from "react-router-dom";
 
-
 function Centrohome() {
   const [mangasPopular, setMangasPopular] = useState([]);
+  
   async function fetchData() {
     try {
       const response = await fetch('https://api-trevomangas.onrender.com/all');
@@ -12,7 +12,7 @@ function Centrohome() {
         throw new Error('Erro ao buscar os dados da API');
       }
       const resultado = await response.json();
-      setMangasPopular(resultado.slice(1, 11));
+      setMangasPopular(resultado.slice(-10));
     } catch (error) {
       console.error(error);
     }
@@ -30,7 +30,7 @@ function Centrohome() {
       </div>
       <ul className="ul">
         {mangasPopular.map((item, index) => (
-          <div className="conteudo" key={item}>
+          <div className="conteudo" key={item.id}>
             <Link to={`/anime/${item.id}`}>
               <li className="li">
                 <div className="foto">
